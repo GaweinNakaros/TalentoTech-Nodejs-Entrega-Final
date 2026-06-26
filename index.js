@@ -14,6 +14,7 @@ import cors from 'cors'; // Si decides usar el paquete cors, puedes importarlo a
 import productosRouter from './src/routes/productos.router.js'; // si es el export default, puedo llamarlo como quiera, no necesariamente productosRouter
 import usersRouter from './src/routes/users.router.js';
 import categoriesRouter from './src/routes/categories.router.js';
+import authRouter from './src/routes/auth.router.js'; // importo el router de autenticación
 
 
 const app = express();
@@ -39,6 +40,9 @@ app.get('/', (req, res) => {
         <p>Bienvenido a mi servidor Express.</p>
     `);
 });
+
+// Middleware para manejar rutas de autenticación
+app.use('/api/auth', authRouter); // se puede usar sin prefijo, o con uno específico como /api/auth, dependiendo de cómo se definan las rutas en el router.
 
 
 // Middleware para manejar rutas de productos
