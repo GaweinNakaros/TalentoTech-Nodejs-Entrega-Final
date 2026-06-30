@@ -3,6 +3,21 @@
 
 Última actualización: 2026-06-12
 
+## Dependencias de producción (dependencies)
+
+  - express: El framework para crear el servidor web y gestionar las rutas de tu API.
+  - firebase: El SDK para conectar tu app con servicios de Firebase (Base de datos, Autenticación, etc.).
+  - jsonwebtoken (JWT): Permite crear y verificar tokens para la autenticación segura de usuarios.
+  - dotenv: Carga variables de entorno desde un archivo .env para ocultar credenciales sensibles (claves de Firebase, secretos de JWT).
+
+---
+
+## Dependencias de desarrollo (devDependencies)
+
+  - nodemon: Reinicia automáticamente el servidor en tu entorno local cada vez que guardás un cambio en el código.
+
+---
+
 ## Resumen
 
 Esta documentación describe una API RESTful genérica usada en el proyecto TalentoTech-Nodejs (clase-11). Incluye detalles de autenticación, recursos, endpoints, ejemplos de peticiones y respuestas, manejo de errores y recomendaciones para pruebas.
